@@ -1,7 +1,4 @@
-// Import stylesheets
-import './style.css';
-
-// Write Javascript code!
+// PART 1
 
 const input = [
   138428,
@@ -118,4 +115,5 @@ const fuelArr = input.map(inputValue => calculateFuel(inputValue))
 
 const totalFuel = fuelArr.reduce((sum, currentValue) => sum + currentValue, 0)
 
+// Solution is working
 console.log(totalFuel)
