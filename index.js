@@ -117,3 +117,24 @@ const totalFuel = fuelArr.reduce((sum, currentValue) => sum + currentValue, 0)
 
 // Solution is working
 console.log(totalFuel)
+
+// PART 2
+
+const fuelForFuel = (totalFuel) => {
+  let fuelIncludingFuel = totalFuel 
+  let remaining = totalFuel 
+
+   set = false 
+   while (set !== true) {
+     if (calculateFuel(remainingFuel) <= 0) {
+       console.log(fuelIncludingFuel, 'solution')
+       set = true
+     } else {
+       fuel = calculateFuel(remainingFuel)
+       remainingFuel = fuel 
+       console.log(remainingFuel, 'remainingFuel')
+       fuelIncludingFuel += fuel
+       console.log(fuelIncludingFuel, 'fuelIncludingFuel')
+     }
+   }
+}
